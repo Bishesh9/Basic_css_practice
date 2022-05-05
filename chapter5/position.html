@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            display: inline;
+        }
+
+        header{
+            background-color: black;
+            color: white;
+            height: 10vh;
+            width: 100vw;
+            z-index: 2;
+            position: fixed;
+            top: 0;
+        }
+
+        p{
+            text-align: center;
+            border: 2px solid red;
+        }
+
+        .container{
+            background-color: aqua;
+            height: 1500px;
+            width: 50vw;
+            margin-left: 25vw;
+            margin-right: 25vw;
+            position: absolute;
+            top: 10vh;
+            z-index: 1;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+            /* position: relative; */
+            position: absolute;
+            /* position: sticky; */
+            /* top: 3px; */
+            z-index: 0;
+        }
+
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+            position: relative;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, numquam rerum repudiandae deleniti accusamus beatae nobis quaerat sunt odit necessitatibus culpa ipsa cumque a quidem repellat ad ab. Nesciunt sapiente placeat eaque veritatis deserunt</p>
+        <div class="box">
+            I am a box.
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto quaerat mollitia impedit, neque officiis? Culpa aut nostrum, provident laboriosam nulla quae autem porro vel eligendi? Nesciunt porro necessitatibus nisi quia, eos magnam cum.
+        </div>
+    </div>
+    
+</body>
+</html>

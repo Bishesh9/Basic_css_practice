@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+.red{
+    background-color: rgb(226, 60, 193);
+    height: 144px;
+    color: white;
+    border: 2px solid red;
+
+}
+
+.green{
+    background-color: green;
+    color: aqua;
+}
