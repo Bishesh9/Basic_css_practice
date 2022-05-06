@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+
+    <style>
+        .container{
+            background-color: red;
+            height: 455px;
+        }
+
+        .box{
+            display: inline-block;
+            border: 2px solid black;
+            /* transform: translate(100px,100px) rotate(0.25turn); */
+           /* transform: scaleX(1) scaleY(1.25); */
+            /* transform: skew(4deg, 10deg); */
+              
+        }
+
+        img:hover{
+            width: 550px;
+
+        }
+        
+        img{
+            /* height: auto; */
+            width: 146px;
+            transition-property: width;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="tilicho" src="tilicho1.jpg">
+            <button id="btn">View</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    tilicho.style.width = "146px";
+    btn.addEventListener("click", ()=>{
+        if(tilicho.style.width == "546px"){
+            tilicho.style.width = "146px";
+        }
+        else if(tilicho.style.width == "146px"){
+            tilicho.style.width = "546px";
+        }
+    })
+</script>
+</html>
